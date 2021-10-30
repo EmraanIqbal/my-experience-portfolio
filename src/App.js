@@ -1,7 +1,12 @@
-import "./App.css";
+import { Box } from "@chakra-ui/layout";
+import HomeSection from "./components/HomeSection";
 
 function App() {
-  return <div className="App">HEY! React App</div>;
+  return (
+    <Box>
+      <HomeSection />
+    </Box>
+  );
 }
 
 export default App;
