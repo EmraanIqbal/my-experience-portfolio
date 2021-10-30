@@ -27,7 +27,7 @@ const HomeSection = () => {
             <Image
               src={MainProf}
               borderRadius="full"
-              boxSize="295px"
+              // boxSize="295px"
               objectFit="cover"
               backgroundColor="red"
             />
