@@ -3,7 +3,7 @@ import HomeSection from "./components/HomeSection";
 
 function App() {
   return (
-    <Box className="tttttttttt">
+    <Box>
       <HomeSection />
     </Box>
   );
