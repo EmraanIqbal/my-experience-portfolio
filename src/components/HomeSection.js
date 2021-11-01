@@ -3,7 +3,6 @@ import { Box, Container, Heading, Spacer, Text } from "@chakra-ui/layout";
 import React from "react";
 import MainProf from "../assets/main.png";
 import "../App.css";
-import { Avatar } from "@chakra-ui/avatar";
 
 const HomeSection = () => {
   return (
