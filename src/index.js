@@ -15,5 +15,6 @@ ReactDOM.render(
   <ChakraProvider theme={theme}>
     <App />
   </ChakraProvider>,
+  // </ThemeProvider>,
   document.getElementById("root")
 );
