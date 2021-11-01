@@ -1,4 +1,3 @@
-// import { Box, Container } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/image";
 import { Box, Container, Heading, Spacer, Text } from "@chakra-ui/layout";
 import React from "react";
