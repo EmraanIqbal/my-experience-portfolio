@@ -14,7 +14,6 @@ const HomeSection = () => {
         my="50px"
         borderRadius="10"
         background="rgb(250, 202, 246)"
-        // h="520px"
         height={{
           base: "400px", // 0-30em
           md: "400px", // 30em-48em
