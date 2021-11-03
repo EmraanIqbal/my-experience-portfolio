@@ -54,6 +54,7 @@ const AboutSection = () => {
               w="100%"
               textTransform="capitalize"
               fontSize="40px"
+              color="#011d48"
             >
               about me
             </Heading>
@@ -71,19 +72,20 @@ const AboutSection = () => {
               />
             </Box>
             <Box w="60%">
-              <Text>
+              <Text color="#011d48">
                 I am Emraan Iqbal. I am a passionate and hard working individual
                 who wants to deliver something back to the society while growing
                 and grooming myself.A hard-working and dependable Web
                 Application Programmer and Front End professional with the
                 ability to work well both independently and in a team.
               </Text>
-              <Heading as="h3" size="md" m="20px 0">
+              <Heading as="h3" size="md" m="20px 0" color="#011d48">
                 Skills
               </Heading>
               <Box d="flex">
                 <Box>
                   <Badge
+                    color="#011d48"
                     p="5px 15px"
                     m="0 10px 10px 0"
                     border="2px solid white"
@@ -95,6 +97,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -105,6 +108,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -115,6 +119,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -125,6 +130,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -135,6 +141,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -146,6 +153,7 @@ const AboutSection = () => {
                   <Badge
                     p="5px 15px"
                     m="0 10px 10px 0"
+                    color="#011d48"
                     border="2px solid white"
                     bgColor="pink.50"
                     textTransform="capitalize"
@@ -155,6 +163,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -165,6 +174,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -175,6 +185,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -185,6 +196,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -195,6 +207,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -205,6 +218,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -215,6 +229,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -225,6 +240,7 @@ const AboutSection = () => {
                   </Badge>
                   <Badge
                     p="5px 15px"
+                    color="#011d48"
                     m="0 10px 10px 0"
                     border="2px solid white"
                     bgColor="pink.50"
@@ -241,6 +257,7 @@ const AboutSection = () => {
                     variant="outline"
                     border="none"
                     textTransform="capitalize"
+                    color="#011d48"
                   >
                     eduction
                   </Button>
@@ -248,7 +265,7 @@ const AboutSection = () => {
                     variant="outline"
                     border="none"
                     textTransform="capitalize"
-                    textTransform="capitalize"
+                    color="#011d48"
                   >
                     experience
                   </Button>
