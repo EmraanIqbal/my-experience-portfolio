@@ -16,6 +16,7 @@ import {
 } from "@chakra-ui/slider";
 import React, { useState } from "react";
 import MainProf from "../assets/main-profile.png";
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 
 const AboutSection = () => {
   const [expId] = useState(1);
@@ -260,25 +261,28 @@ const AboutSection = () => {
                   </Badge>
                 </Box>
               </Box>
-              <Box mt="20px">
+              <Tabs mt="20px">
                 <HStack>
-                  <Button
+                  {/* <TabList> */}
+                  <Tab
+                    _focus={{ outline: "0" }}
+                    _selected={{ color: "#d45366" }}
                     variant="outline"
                     border="none"
                     textTransform="capitalize"
-                    // color="#011d48"
-                    // isActive={true}
                     mr="20px"
                     fontSize="20px"
                     fontWeight="500"
-                    color="#d45366"
+                    color="#011d48"
                     p="2"
                     background="transparent"
                     id="1"
                   >
                     education
-                  </Button>
-                  <Button
+                  </Tab>
+                  <Tab
+                    _focus={{ outline: "0" }}
+                    _selected={{ color: "#d45366" }}
                     variant="outline"
                     border="none"
                     textTransform="capitalize"
@@ -290,10 +294,12 @@ const AboutSection = () => {
                     background="transparent"
                   >
                     experience
-                  </Button>
+                  </Tab>
+                  {/* </TabList> */}
                 </HStack>
                 <Box d="flex">
-                  {/* <Slider
+                  <TabPanels>
+                    {/* <Slider
                     aria-label="slider-ex-3"
                     defaultValue={100}
                     fixedValue="50"
@@ -307,191 +313,199 @@ const AboutSection = () => {
                     </SliderTrack>
                     <SliderThumb bgColor="#d45366" />
                   </Slider> */}
-                  <Box ml="46px" mb="50px" id="1" d="none">
-                    <Heading mt="2" color="#d45366" as="h5" size="sm">
-                      2007-2012
-                    </Heading>
-                    <Box>
-                      <Heading
-                        color="#011d48"
-                        as="h5"
-                        size="sm"
-                        textTransform="capitalize"
-                        d="flex"
-                        alignItems="center"
-                        mt="1"
-                      >
-                        Primary education -
-                        <Heading as="h6" size="xs" ml="1">
-                          islamic ideal school
+                    <TabPanel>
+                      <Box ml="46px" mb="50px" id="1">
+                        <Heading mt="2" color="#d45366" as="h5" size="sm">
+                          2007-2012
                         </Heading>
-                      </Heading>
-                      <Text color="#011d48" my="2">
-                        Primary education is typically the first stage of formal
-                        education, coming preschool/kindergarten and before
-                        secondary school. Primary education takes place in
-                        primary school.
-                      </Text>
-                    </Box>
-                    <Heading mt="2" color="#d45366" as="h5" size="sm">
-                      2012-2017
-                    </Heading>
-                    <Box>
-                      <Heading
-                        color="#011d48"
-                        as="h5"
-                        size="sm"
-                        textTransform="capitalize"
-                        d="flex"
-                        alignItems="center"
-                        mt="1"
-                      >
-                        secondary education -
-                        <Heading as="h6" size="xs" ml="1">
-                          divisional public school (dps)
+                        <Box>
+                          <Heading
+                            color="#011d48"
+                            as="h5"
+                            size="sm"
+                            textTransform="capitalize"
+                            d="flex"
+                            alignItems="center"
+                            mt="1"
+                          >
+                            Primary education -
+                            <Heading as="h6" size="xs" ml="1">
+                              islamic ideal school
+                            </Heading>
+                          </Heading>
+                          <Text color="#011d48" my="2">
+                            Primary education is typically the first stage of
+                            formal education, coming preschool/kindergarten and
+                            before secondary school. Primary education takes
+                            place in primary school.
+                          </Text>
+                        </Box>
+                        <Heading mt="2" color="#d45366" as="h5" size="sm">
+                          2012-2017
                         </Heading>
-                      </Heading>
-                      <Text color="#011d48" my="2">
-                        Secondary education covers two phases on the
-                        International Standard Classification of Education
-                        scale. Level 2 or lower secondary education is
-                        considered the second and final phase of basic
-                        education.
-                      </Text>
-                    </Box>
-                    <Heading mt="3" color="#d45366" as="h5" size="sm">
-                      2017-2020
-                    </Heading>
-                    <Box>
-                      <Heading
-                        color="#011d48"
-                        as="h5"
-                        size="sm"
-                        textTransform="capitalize"
-                        d="flex"
-                        alignItems="center"
-                        mt="1"
-                      >
-                        higher education -
-                        <Heading as="h6" size="xs" ml="1">
-                          unique group of institution
+                        <Box>
+                          <Heading
+                            color="#011d48"
+                            as="h5"
+                            size="sm"
+                            textTransform="capitalize"
+                            d="flex"
+                            alignItems="center"
+                            mt="1"
+                          >
+                            secondary education -
+                            <Heading as="h6" size="xs" ml="1">
+                              divisional public school (dps)
+                            </Heading>
+                          </Heading>
+                          <Text color="#011d48" my="2">
+                            Secondary education covers two phases on the
+                            International Standard Classification of Education
+                            scale. Level 2 or lower secondary education is
+                            considered the second and final phase of basic
+                            education.
+                          </Text>
+                        </Box>
+                        <Heading mt="3" color="#d45366" as="h5" size="sm">
+                          2017-2020
                         </Heading>
-                      </Heading>
-                      <Text color="#011d48" my="2" justifyContent="center">
-                        Higher education is tertiary education leading to award
-                        of an academic degree. Higher education, also called
-                        post-secondary education, third-level or tertiary
-                        education.
-                      </Text>
-                    </Box>
-                    <Heading mt="3" color="#d45366" as="h5" size="sm">
-                      2020-2024
-                    </Heading>
-                    <Box>
-                      <Heading
-                        color="#011d48"
-                        as="h5"
-                        size="sm"
-                        textTransform="capitalize"
-                        d="flex"
-                        alignItems="center"
-                        mt="1"
-                      >
-                        Bachelor of Computer Science -
-                        <Heading as="h6" size="xs" ml="1">
-                          Government College University Lahore (GCUL)
+                        <Box>
+                          <Heading
+                            color="#011d48"
+                            as="h5"
+                            size="sm"
+                            textTransform="capitalize"
+                            d="flex"
+                            alignItems="center"
+                            mt="1"
+                          >
+                            higher education -
+                            <Heading as="h6" size="xs" ml="1">
+                              unique group of institution
+                            </Heading>
+                          </Heading>
+                          <Text color="#011d48" my="2" justifyContent="center">
+                            Higher education is tertiary education leading to
+                            award of an academic degree. Higher education, also
+                            called post-secondary education, third-level or
+                            tertiary education.
+                          </Text>
+                        </Box>
+                        <Heading mt="3" color="#d45366" as="h5" size="sm">
+                          2020-2024
                         </Heading>
-                      </Heading>
-                      <Text color="#011d48" my="2" justifyContent="center">
-                        This Institution is one of the oldest seats of learning
-                        in the Muslim world. As a seat of higher learning GC
-                        University blends grand old traditions and modern
-                        educational standards to meet the ideals set by persons
-                        like Dr. Leitner, philosopher the poet, Dr. Muhammad
-                        Iqbal and the Noble Laureate, Dr. Abdus Salam.
-                      </Text>
-                    </Box>
-                  </Box>
-                  <Box ml="46px" mb="50px" id="1">
-                    <Heading mt="2" color="#d45366" as="h5" size="sm">
-                      2019-2020
-                    </Heading>
-                    <Box>
-                      <Heading
-                        color="#011d48"
-                        as="h5"
-                        size="sm"
-                        textTransform="capitalize"
-                        d="flex"
-                        alignItems="center"
-                        mt="1"
-                      >
-                        Front-end developer -
-                        <Heading as="h6" size="xs" ml="1">
-                          wide tech solutions
+                        <Box>
+                          <Heading
+                            color="#011d48"
+                            as="h5"
+                            size="sm"
+                            textTransform="capitalize"
+                            d="flex"
+                            alignItems="center"
+                            mt="1"
+                          >
+                            BS Computer Science -
+                            <Heading as="h6" size="xs" ml="1">
+                              Government College University Lahore (GCUL)
+                            </Heading>
+                          </Heading>
+                          <Text color="#011d48" my="2" justifyContent="center">
+                            This Institution is one of the oldest seats of
+                            learning in the Muslim world. As a seat of higher
+                            learning GC University blends grand old traditions
+                            and modern educational standards to meet the ideals
+                            set by persons like Dr. Leitner, philosopher the
+                            poet, Dr. Muhammad Iqbal and the Noble Laureate, Dr.
+                            Abdus Salam.
+                          </Text>
+                        </Box>
+                      </Box>
+                    </TabPanel>
+                    <TabPanel>
+                      <Box ml="46px" mb="50px" id="1">
+                        <Heading mt="2" color="#d45366" as="h5" size="sm">
+                          2019-2020
                         </Heading>
-                      </Heading>
-                      <Text color="#011d48" my="2">
-                        Front-end web development is the development of the
-                        graphical user interface of a website, through the use
-                        of HTML, CSS, and JavaScript, so that users can view and
-                        interact with that website.
-                      </Text>
-                    </Box>
-                    <Heading mt="2" color="#d45366" as="h5" size="sm">
-                      2020-2021
-                    </Heading>
-                    <Box>
-                      <Heading
-                        color="#011d48"
-                        as="h5"
-                        size="sm"
-                        textTransform="capitalize"
-                        d="flex"
-                        alignItems="center"
-                        mt="1"
-                      >
-                        react js developer -
-                        <Heading as="h6" size="xs" ml="1">
-                          LEADconcept solution leaders
+                        <Box>
+                          <Heading
+                            color="#011d48"
+                            as="h5"
+                            size="sm"
+                            textTransform="capitalize"
+                            d="flex"
+                            alignItems="center"
+                            mt="1"
+                          >
+                            Front-end developer -
+                            <Heading as="h6" size="xs" ml="1">
+                              wide tech solutions
+                            </Heading>
+                          </Heading>
+                          <Text color="#011d48" my="2">
+                            Front-end web development is the development of the
+                            graphical user interface of a website, through the
+                            use of HTML, CSS, and JavaScript, so that users can
+                            view and interact with that website.
+                          </Text>
+                        </Box>
+                        <Heading mt="2" color="#d45366" as="h5" size="sm">
+                          2020-2021
                         </Heading>
-                      </Heading>
-                      <Text color="#011d48" my="2">
-                        ReactJS developers are front-end developers who build
-                        modern-day UI components to improvise application
-                        performance. They leverage their knowledge about
-                        JavaScript, HTML, CSS and work closely with testers,
-                        designers, web designers, and project managers to create
-                        a robust and effective application.
-                      </Text>
-                    </Box>
-                    <Heading mt="3" color="#d45366" as="h5" size="sm">
-                      2021-2022
-                    </Heading>
-                    <Box>
-                      <Heading
-                        color="#011d48"
-                        as="h5"
-                        size="sm"
-                        textTransform="capitalize"
-                        d="flex"
-                        alignItems="center"
-                        mt="1"
-                      >
-                        MERN Stack developer -
-                        <Heading as="h6" size="xs" ml="1">
-                          unique group of institution
+                        <Box>
+                          <Heading
+                            color="#011d48"
+                            as="h5"
+                            size="sm"
+                            textTransform="capitalize"
+                            d="flex"
+                            alignItems="center"
+                            mt="1"
+                          >
+                            react js developer -
+                            <Heading as="h6" size="xs" ml="1">
+                              LEADconcept solution leaders
+                            </Heading>
+                          </Heading>
+                          <Text color="#011d48" my="2">
+                            ReactJS developers are front-end developers who
+                            build modern-day UI components to improvise
+                            application performance. They leverage their
+                            knowledge about JavaScript, HTML, CSS and work
+                            closely with testers, designers, web designers, and
+                            project managers to create a robust and effective
+                            application.
+                          </Text>
+                        </Box>
+                        <Heading mt="3" color="#d45366" as="h5" size="sm">
+                          2021-2022
                         </Heading>
-                      </Heading>
-                      <Text color="#011d48" my="2" justifyContent="center">
-                        MERN stands for MongoDB, Express, React, Node, after the
-                        four key technologies that make up the stack. ...
-                        Express and Node make up the middle (application) tier.
-                      </Text>
-                    </Box>
-                  </Box>
+                        <Box>
+                          <Heading
+                            color="#011d48"
+                            as="h5"
+                            size="sm"
+                            textTransform="capitalize"
+                            d="flex"
+                            alignItems="center"
+                            mt="1"
+                          >
+                            MERN Stack developer -
+                            <Heading as="h6" size="xs" ml="1">
+                              404 not found
+                            </Heading>
+                          </Heading>
+                          <Text color="#011d48" my="2" justifyContent="center">
+                            MERN stands for MongoDB, Express, React, Node, after
+                            the four key technologies that make up the stack.
+                            ... Express and Node make up the middle
+                            (application) tier.
+                          </Text>
+                        </Box>
+                      </Box>
+                    </TabPanel>
+                  </TabPanels>
                 </Box>
-              </Box>
+              </Tabs>
             </Box>
           </Box>
         </Box>

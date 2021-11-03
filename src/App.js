@@ -5,7 +5,7 @@ import HomeSection from "./components/HomeSection";
 function App() {
   return (
     <Box>
-      {/* <HomeSection /> */}
+      <HomeSection />
       <AboutSection />
     </Box>
   );

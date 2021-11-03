@@ -12,7 +12,7 @@ import {
   VStack,
 } from "@chakra-ui/layout";
 import React from "react";
-import MainProf from "../assets/main.png";
+import MainProf from "../assets/main-profile.png";
 import bgImg from "../assets/bg-img.jpg";
 import "../App.css";
 
@@ -42,15 +42,15 @@ const HomeSection = () => {
         my="40px"
         borderRadius="20px"
         background="rgb(250, 202, 246)"
-        // h="520px"
-        height={{
-          base: "400px", // 0-30em
-          md: "400px", // 30em-48em
-          lg: "620px", // 48em-62em
-          // "15%", // 62em+
-        }}
+        h="inherit"
+        // height={{
+        //   base: "400px", // 0-30em
+        //   md: "400px", // 30em-48em
+        //   lg: "620px", // 48em-62em
+        //   // "15%", // 62em+
+        // }}
       >
-        <Box d="flex" justifyContent="space-between">
+        <Box d="flex" justifyContent="space-between" mb="200px">
           <Box
             mt="180px"
             ml="60px"
