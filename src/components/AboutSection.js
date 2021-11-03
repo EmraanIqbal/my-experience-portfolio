@@ -258,14 +258,24 @@ const AboutSection = () => {
                     border="none"
                     textTransform="capitalize"
                     color="#011d48"
+                    mr="20px"
+                    fontSize="20px"
+                    fontWeight="500"
+                    p="2"
+                    background="transparent"
                   >
-                    eduction
+                    education
                   </Button>
                   <Button
                     variant="outline"
                     border="none"
                     textTransform="capitalize"
                     color="#011d48"
+                    mr="20px"
+                    fontSize="20px"
+                    fontWeight="500"
+                    p="2"
+                    background="transparent"
                   >
                     experience
                   </Button>
