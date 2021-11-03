@@ -293,7 +293,7 @@ const AboutSection = () => {
                   </Button>
                 </HStack>
                 <Box d="flex">
-                  <Slider
+                  {/* <Slider
                     aria-label="slider-ex-3"
                     defaultValue={100}
                     fixedValue="50"
@@ -306,7 +306,7 @@ const AboutSection = () => {
                       <SliderFilledTrack bgColor="#d45366" />
                     </SliderTrack>
                     <SliderThumb bgColor="#d45366" />
-                  </Slider>
+                  </Slider> */}
                   <Box ml="46px" mb="50px" id="1" d="none">
                     <Heading mt="2" color="#d45366" as="h5" size="sm">
                       2007-2012
@@ -409,6 +409,84 @@ const AboutSection = () => {
                         educational standards to meet the ideals set by persons
                         like Dr. Leitner, philosopher the poet, Dr. Muhammad
                         Iqbal and the Noble Laureate, Dr. Abdus Salam.
+                      </Text>
+                    </Box>
+                  </Box>
+                  <Box ml="46px" mb="50px" id="1">
+                    <Heading mt="2" color="#d45366" as="h5" size="sm">
+                      2019-2020
+                    </Heading>
+                    <Box>
+                      <Heading
+                        color="#011d48"
+                        as="h5"
+                        size="sm"
+                        textTransform="capitalize"
+                        d="flex"
+                        alignItems="center"
+                        mt="1"
+                      >
+                        Front-end developer -
+                        <Heading as="h6" size="xs" ml="1">
+                          wide tech solutions
+                        </Heading>
+                      </Heading>
+                      <Text color="#011d48" my="2">
+                        Front-end web development is the development of the
+                        graphical user interface of a website, through the use
+                        of HTML, CSS, and JavaScript, so that users can view and
+                        interact with that website.
+                      </Text>
+                    </Box>
+                    <Heading mt="2" color="#d45366" as="h5" size="sm">
+                      2020-2021
+                    </Heading>
+                    <Box>
+                      <Heading
+                        color="#011d48"
+                        as="h5"
+                        size="sm"
+                        textTransform="capitalize"
+                        d="flex"
+                        alignItems="center"
+                        mt="1"
+                      >
+                        react js developer -
+                        <Heading as="h6" size="xs" ml="1">
+                          LEADconcept solution leaders
+                        </Heading>
+                      </Heading>
+                      <Text color="#011d48" my="2">
+                        ReactJS developers are front-end developers who build
+                        modern-day UI components to improvise application
+                        performance. They leverage their knowledge about
+                        JavaScript, HTML, CSS and work closely with testers,
+                        designers, web designers, and project managers to create
+                        a robust and effective application.
+                      </Text>
+                    </Box>
+                    <Heading mt="3" color="#d45366" as="h5" size="sm">
+                      2021-2022
+                    </Heading>
+                    <Box>
+                      <Heading
+                        color="#011d48"
+                        as="h5"
+                        size="sm"
+                        textTransform="capitalize"
+                        d="flex"
+                        alignItems="center"
+                        mt="1"
+                      >
+                        MERN Stack developer -
+                        <Heading as="h6" size="xs" ml="1">
+                          unique group of institution
+                        </Heading>
+                      </Heading>
+                      <Text color="#011d48" my="2" justifyContent="center">
+                        MERN stands for MongoDB, Express, React, Node, after the
+                        four key technologies that make up the stack. ...
+                        Express and Node make up the middle (application) tier.
                       </Text>
                     </Box>
                   </Box>
