@@ -43,12 +43,6 @@ const HomeSection = () => {
         borderRadius="20px"
         background="rgb(250, 202, 246)"
         h="inherit"
-        // height={{
-        //   base: "400px", // 0-30em
-        //   md: "400px", // 30em-48em
-        //   lg: "620px", // 48em-62em
-        //   // "15%", // 62em+
-        // }}
       >
         <Box d="flex" justifyContent="space-between" mb="200px">
           <Box
