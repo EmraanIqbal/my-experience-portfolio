@@ -6,6 +6,7 @@ import {
   Container,
   Heading,
   HStack,
+  Link,
   Text,
 } from "@chakra-ui/layout";
 import {
@@ -261,6 +262,7 @@ const AboutSection = () => {
                   </Badge>
                 </Box>
               </Box>
+
               <Tabs mt="20px">
                 <HStack>
                   {/* <TabList> */}
@@ -280,6 +282,7 @@ const AboutSection = () => {
                   >
                     education
                   </Tab>
+
                   <Tab
                     _focus={{ outline: "0" }}
                     _selected={{ color: "#d45366" }}
@@ -295,26 +298,25 @@ const AboutSection = () => {
                   >
                     experience
                   </Tab>
-                  {/* </TabList> */}
                 </HStack>
                 <Box d="flex">
                   <TabPanels>
                     {/* <Slider
-                    aria-label="slider-ex-3"
-                    defaultValue={100}
-                    fixedValue="50"
-                    focusThumbOnChange={true}
-                    orientation="vertical"
-                    minH="600px"
-                    // w="10px"
-                  >
-                    <SliderTrack>
-                      <SliderFilledTrack bgColor="#d45366" />
-                    </SliderTrack>
-                    <SliderThumb bgColor="#d45366" />
-                  </Slider> */}
+                      aria-label="slider-ex-3"
+                      defaultValue={100}
+                      fixedValue="50"
+                      focusThumbOnChange={true}
+                      orientation="vertical"
+                      minH="600px"
+                      w="10px"
+                    >
+                      <SliderTrack>
+                        <SliderFilledTrack bgColor="#d45366" />
+                      </SliderTrack>
+                      <SliderThumb bgColor="#d45366" />
+                    </Slider> */}
                     <TabPanel>
-                      <Box ml="46px" mb="50px" id="1">
+                      <Box ml="46px" id="1">
                         <Heading mt="2" color="#d45366" as="h5" size="sm">
                           2007-2012
                         </Heading>
@@ -505,6 +507,48 @@ const AboutSection = () => {
                     </TabPanel>
                   </TabPanels>
                 </Box>
+                <HStack spacing="25px" ml="10px" mt="10px" mb="50px">
+                  <Link>
+                    <Badge
+                      border="2px solid white"
+                      fontSize="18px"
+                      color="#d45366"
+                      bg="pink.50"
+                      borderRadius="full"
+                      p="2"
+                      pl="6"
+                      pr="6"
+                      textTransform="capitalize"
+                      transition="0.3 ease"
+                      _hover={{
+                        background: "pink.300",
+                        color: "pink.500",
+                      }}
+                    >
+                      download cv
+                    </Badge>
+                  </Link>
+                  <Link>
+                    <Badge
+                      border="2px solid white"
+                      fontSize="18px"
+                      color="#d45366"
+                      bg="pink.50"
+                      borderRadius="full"
+                      p="2"
+                      pl="6"
+                      pr="6"
+                      textTransform="capitalize"
+                      transition="0.3 ease"
+                      _hover={{
+                        background: "pink.300",
+                        color: "pink.500",
+                      }}
+                    >
+                      contact me
+                    </Badge>
+                  </Link>
+                </HStack>
               </Tabs>
             </Box>
           </Box>

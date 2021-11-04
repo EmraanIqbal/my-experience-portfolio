@@ -96,6 +96,7 @@ const HomeSection = () => {
                   pl="4"
                   pr="4"
                   textTransform="capitalize"
+                  transition="0.3 ease"
                   _hover={{
                     background: "pink.300",
                     color: "pink.500",
