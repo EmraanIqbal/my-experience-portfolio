@@ -70,7 +70,7 @@ const HomeSection = () => {
               <Link my="20px">
                 <Badge
                   fontSize="0.8em"
-                  colorScheme="pink"
+                  color="#d45366"
                   bg="white"
                   borderRadius="full"
                   p="2"
@@ -89,7 +89,7 @@ const HomeSection = () => {
               <Link>
                 <Badge
                   fontSize="0.8em"
-                  colorScheme="pink"
+                  color="#d45366"
                   bg="white"
                   borderRadius="full"
                   p="2"

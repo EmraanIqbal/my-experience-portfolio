@@ -1,4 +1,3 @@
-import { Button } from "@chakra-ui/button";
 import { Image } from "@chakra-ui/image";
 import {
   Badge,
@@ -9,18 +8,11 @@ import {
   Link,
   Text,
 } from "@chakra-ui/layout";
-import {
-  Slider,
-  SliderFilledTrack,
-  SliderThumb,
-  SliderTrack,
-} from "@chakra-ui/slider";
-import React, { useState } from "react";
+
 import MainProf from "../assets/main-profile.png";
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { Tabs, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 
 const AboutSection = () => {
-  const [expId] = useState(1);
   return (
     <Box
       ml={{ base: "30px", md: "70px" }}
@@ -47,13 +39,6 @@ const AboutSection = () => {
         borderRadius="20px"
         background="rgb(250, 202, 246)"
         mb="40px"
-        // h="520px"
-        // height={{
-        //   base: "400px", // 0-30em
-        //   md: "400px", // 30em-48em
-        //   lg: "1000px", // 48em-62em
-        //   // "15%", // 62em+
-        // }}
         h="inherit"
       >
         <Box>
