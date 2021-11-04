@@ -20,3 +20,11 @@ body {
   -webkit-transform: scale(5); /* Safari 3-8 */
   transform: scale(1.1);
 }
+
+.css-1iqbypn {
+  margin-top: 15 px;
+  margin-right: 140 px;
+  color: deeppink;
+  font-size: 20px;
+  border-radius: 50%;
+}
