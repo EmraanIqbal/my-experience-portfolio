@@ -7,3 +7,16 @@ body {
   font-weight: bold;
   text-align: center;
 }
+
+.transitionProp {
+  transition: transform 0.8s;
+}
+.transitionProp Image {
+  border-radius: 10px;
+}
+
+.transitionProp:hover {
+  -ms-transform: scale(5); /* IE 9 */
+  -webkit-transform: scale(5); /* Safari 3-8 */
+  transform: scale(1.1);
+}

@@ -1,7 +1,40 @@
-import { Box, Container, Heading } from "@chakra-ui/layout";
+import { Button } from "@chakra-ui/button";
+import { Image } from "@chakra-ui/image";
+import { Box, Container, Grid, Heading } from "@chakra-ui/layout";
 import React from "react";
+import template1 from "../assets/1-template.jpg";
+import template2 from "../assets/2-template.jpg";
+import template3 from "../assets/3-template.jpg";
+import template4 from "../assets/4-template.jpg";
+import template5 from "../assets/5-template.jpg";
+import template6 from "../assets/6-template.jpg";
+import template7 from "../assets/7-template.jpg";
+import template8 from "../assets/8-template.jpg";
+import template9 from "../assets/9-template.jpg";
+import { extendTheme } from "@chakra-ui/react";
+import "../App.css";
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+} from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/hooks";
 
 const PortfolioSection = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  extendTheme({
+    transition: {
+      custom: {
+        property: "transform",
+        duration: "0.5s",
+        easing: "ease-in-out",
+      },
+    },
+  });
   return (
     <Box
       ml={{ base: "30px", md: "70px" }}
@@ -27,8 +60,7 @@ const PortfolioSection = () => {
         my="40px"
         borderRadius="20px"
         background="rgb(250, 202, 246)"
-        // mb="40px"
-        h="inherit"
+        h="inherit "
       >
         <Box>
           <Box>
@@ -44,8 +76,391 @@ const PortfolioSection = () => {
               recent work
             </Heading>
           </Box>
+
+          <Grid templateColumns="repeat(3, 1fr)" gap={10}>
+            <Box w="100%" h="15vh" mb="200px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template1}
+                h="200px"
+                w="300px"
+                objectFit="cover"
+                borderRadius="10"
+                className="transitionProp"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                digital innovation website
+              </Heading>
+              <Button
+                onClick={onOpen}
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="100px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template2}
+                h="200px"
+                w="300px"
+                objectFit="cover"
+                className="transitionProp"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                glint website
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="100px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template3}
+                h="200px"
+                className="transitionProp"
+                w="300px"
+                objectFit="cover"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                learn skating website
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="20vh" mb="200px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template4}
+                h="200px"
+                w="300px"
+                objectFit="cover"
+                className="transitionProp"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                digital innovation company
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="100px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template5}
+                h="200px"
+                className="transitionProp"
+                w="300px"
+                objectFit="cover"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                digital innovation company
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="100px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template6}
+                h="200px"
+                w="300px"
+                objectFit="cover"
+                className="transitionProp"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                digital innovation company
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="100px" mb="200px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template7}
+                h="200px"
+                w="300px"
+                className="transitionProp"
+                objectFit="cover"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                digital innovation company
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="100px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template8}
+                h="200px"
+                w="300px"
+                objectFit="cover"
+                className="transitionProp"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                digital innovation company
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+            <Box w="100%" h="100px">
+              <Image
+                border="10px solid #f7b3f7"
+                src={template9}
+                h="200px"
+                w="300px"
+                className="transitionProp"
+                objectFit="cover"
+                borderRadius="10"
+              />
+              <Heading
+                as="h4"
+                my="5"
+                size="md"
+                textTransform="capitalize"
+                color="#011d48"
+              >
+                digital innovation company
+              </Heading>
+              <Button
+                fontSize="18px"
+                fontWeight="700"
+                color="#d45366"
+                bg="pink.100"
+                borderRadius="full"
+                p="2"
+                pl="6"
+                pr="6"
+                textTransform="capitalize"
+                transition="0.3 ease"
+                _hover={{
+                  background: "pink.300",
+                  color: "pink.500",
+                }}
+                border="2px solid white"
+              >
+                View Project
+              </Button>
+            </Box>
+          </Grid>
         </Box>
       </Container>
+      <Modal isOpen={isOpen} onClose={onClose} size="4xl">
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Modal Title</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Image src={template1} />
+            <Heading
+              as="h4"
+              my="5"
+              size="md"
+              textTransform="capitalize"
+              color="#011d48"
+            >
+              digital innovation website
+            </Heading>
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme="blue" mr={3} onClick={onClose}>
+              Close
+            </Button>
+            <Button variant="ghost" onClick={onOpen}>
+              Secondary Action
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </Box>
   );
 };
