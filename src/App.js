@@ -11,7 +11,7 @@ function App() {
       <HomeSection />
       <AboutSection />
       <PortfolioSection />
-      {/* <Modal /> */}
+      <Modal />
       <FolderSection />
     </Box>
   );
