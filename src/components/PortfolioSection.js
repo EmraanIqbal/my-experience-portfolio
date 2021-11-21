@@ -507,7 +507,14 @@ const PortfolioSection = () => {
               </Box>
             </ModalBody>
 
-            <ModalFooter></ModalFooter>
+            <ModalFooter>
+              {/* <Button colorScheme="blue" mr={3} onClick={onClose}>
+                Close
+              </Button>
+              <Button variant="ghost" onClick={onOpen}>
+                Secondary Action
+              </Button> */}
+            </ModalFooter>
           </Container>
         </ModalContent>
       </Modal>
