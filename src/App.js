@@ -8,8 +8,8 @@ import PortfolioSection from "./components/PortfolioSection";
 function App() {
   return (
     <Box>
-      {/* <HomeSection />
-      <AboutSection /> 
+      <HomeSection />
+      <AboutSection />
       <PortfolioSection />
       {/* <Modal /> */}
       <FolderSection />
