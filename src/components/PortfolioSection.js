@@ -40,18 +40,6 @@ const PortfolioSection = () => {
       ml={{ base: "30px", md: "70px" }}
       mr={{ base: "30px", md: "70px" }}
       overflowY="auto"
-      css={{
-        "&::-webkit-scrollbar": {
-          width: "4px",
-        },
-        "&::-webkit-scrollbar-track": {
-          width: "6px",
-        },
-        "&::-webkit-scrollbar-thumb": {
-          background: "pink.500",
-          borderRadius: "24px",
-        },
-      }}
     >
       <Container
         maxW="container.lg"
