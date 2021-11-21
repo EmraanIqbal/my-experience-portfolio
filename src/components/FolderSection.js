@@ -1,6 +1,5 @@
 import { Button } from "@chakra-ui/button";
 import { Input } from "@chakra-ui/input";
-import { Box, Container, Heading, Stack, Text } from "@chakra-ui/layout";
 import React from "react";
 
 const FolderSection = () => {
