@@ -95,7 +95,7 @@ const PortfolioSection = () => {
                 textTransform="capitalize"
                 color="#011d48"
               >
-                digital innovation website
+                digital innovation webe
               </Heading>
               <Button
                 onClick={onOpen}
